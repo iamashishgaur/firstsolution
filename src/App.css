@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --footerbg: #011a41;
+  --footerbar: #000b1c;
+  --footertext: #dfe4fd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+  padding: 0 5rem;
+}
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.abouttext {
+  font-size: 18px;
+  font-weight: 500;
+  word-spacing: 2px;
+  font-family: cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  width: 100%;
+  height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  padding: 0 5rem;
+  .navlogo {
+    max-width: 240px;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+  .menu-icons {
+    display: none;
+    svg {
+      cursor: pointer;
+      font-size: 2rem;
+    }
+  }
+}
+.social-icons-2 {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  & > div {
+    display: flex;
+    gap: 20px;
+    & > span {
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      border: 2px solid #000b1c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      & > a {
+        color: #000b1c;
+        & > svg {
+          font-size: 20px;
+        }
+      }
+      &:hover:nth-child(1) {
+        background-color: #0077b5;
+        svg {
+          color: white;
+        }
+      }
+      &:hover:nth-child(2) {
+        background-color: #4267b2;
+        svg {
+          color: white;
+        }
+      }
+      &:hover:nth-child(3) {
+        background-color: #ee2a7b;
+        svg {
+          color: white;
+        }
+      }
+      &:hover:nth-child(4) {
+        background-color: #ff0000;
+        svg {
+          color: white;
+        }
+      }
+    }
+  }
+}
+/* Reponsive Media Navbar*/
+@media screen and (max-width: 1207px) {
+  .navbar {
+    z-index: 99;
+    /* padding: 0 1rem; */
+    .nav-menu {
+      top: 80px;
+      margin: 0px;
+      z-index: -1;
+      width: 100%;
+      gap: 1rem;
+      opacity: 0.8;
+      height: auto;
+      display: flex;
+      text-align: start;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      background-color: black;
+      font-size: 1.5rem;
+      left: -220%;
+      align-items: stretch;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0, 8px, 32px, 0 rgba(3, 38, 135, 0.37);
+      .nav-link {
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        &:hover {
+          color: orange;
+        }
+      }
+      &.active {
+        left: 0%;
+      }
+    }
+    .menu-icons {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    z-index: 99;
+    padding: 0 2.5rem;
+    .navlogo {
+      max-width: 220px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbar {
+    z-index: 99;
+    padding: 0 1rem;
+    .navlogo {
+      max-width: 200px;
+    }
+  }
+}
+/* about social */
+@media screen and (max-width: 425px) {
+  .social-icons-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar {
+    z-index: 99;
+    padding: 0 1rem;
+    .navlogo {
+      max-width: 150px;
+    }
+  }
+}
+
+/* services Media */
+@media screen and (max-width: 425px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
+
+/* About Media */
+@media screen and (max-width: 768px) {
+  .writepen {
+    & > img {
+      margin-top: 15px;
+    }
+  }
+}
+
+/* Contact Media */
+@media screen and (max-width: 768px) {
+  .map {
+    margin-top: 2rem;
+    min-height: 400px !important;
   }
 }
