@@ -2,13 +2,38 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 :root {
   --footerbg: #011a41;
   --footerbar: #000b1c;
   --footertext: #dfe4fd;
+  --buttonhover: #b5ca59;
 }
 
 .wrapper {
@@ -169,6 +194,18 @@
     }
   }
 }
+/* footer media  */
+@media screen and (max-width: 425px) {
+  .footer {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 30px;
+  }
+}
+
 /* about social */
 @media screen and (max-width: 425px) {
   .social-icons-2 {
@@ -191,6 +228,11 @@
     padding: 0 1rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .services {
+    flex-direction: column-reverse;
+  }
+}
 
 /* About Media */
 @media screen and (max-width: 768px) {
@@ -198,6 +240,9 @@
     & > img {
       margin-top: 15px;
     }
+  }
+  .abouttext {
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -208,3 +253,5 @@
     min-height: 400px !important;
   }
 }
+
+/* Testimonial CSS */

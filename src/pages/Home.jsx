@@ -2,6 +2,8 @@ import React from "react";
 import { FiMenu } from "react-icons/fi";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
 import {
   MDBCard,
   MDBCardBody,
@@ -21,6 +23,7 @@ import {
 
 const Home = () => {
   const nav = useNavigate();
+
   return (
     <>
       <div className="container-xxl wrapper py-5 mb-5">
@@ -36,14 +39,19 @@ const Home = () => {
                   Solution Recruitment Consultancy.
                 </p>
               </ResumeHeaderTitle>
-              <Button
-                style={{ marginTop: "1.5rem", padding: "15px 30px" }}
+              <button
+                class="btn btn-primary"
+                style={{
+                  marginTop: "1.5rem",
+                  padding: "15px 30px",
+                  fontWeight: "500",
+                }}
                 onClick={() => {
                   nav("/");
                 }}
               >
-                Explore More
-              </Button>
+                Explore More <MdKeyboardDoubleArrowRight size={25} />
+              </button>
             </BannerLeft>
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 flex-col-reverse">
@@ -57,7 +65,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <AboutusContainer className="py-3 mt-5 mb-5">
         <div
           class="text-center mx-auto wow fadeInUp"
@@ -72,7 +79,9 @@ const Home = () => {
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             About Us
           </p>
-          <h1 class="display-5 mb-5">About For First Solution</h1>
+          <h1 class=" mb-5" style={{ fontSize: "2rem", fontWeight: "bold" }}>
+            About For First Solution
+          </h1>
         </div>
         <div className="container-xxl wrapper">
           <div className="row ">
@@ -113,11 +122,12 @@ const Home = () => {
                 </p>
                 <button
                   className="btn btn-primary text-center py-3 px-5 ml-5"
+                  style={{ fontWeight: "500" }}
                   onClick={() => {
                     nav("/about");
                   }}
                 >
-                  Know More About
+                  Know More About <MdKeyboardDoubleArrowRight size={25} />
                 </button>
               </div>
             </div>
@@ -139,7 +149,7 @@ const Home = () => {
               <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
                 What We Do !
               </p>
-              <h1 class="display-5 mb-4">
+              <h1 class="mb-4" style={{ fontSize: "3rem", fontWeight: "bold" }}>
                 Few Reasons Why People Choosing Us!
               </h1>
               <p class="mb-4">
@@ -152,10 +162,10 @@ const Home = () => {
                 that they might consider a move for fear they might jeopardize
                 their current job. However, when professionally and discretely
                 approached by a trained First Solution , our candidates tend to
-                respond
+                respond.
               </p>
               <Link class="btn btn-primary py-3 px-5" href="">
-                Explore More
+                Explore More <MdKeyboardDoubleArrowRight size={25} />
               </Link>
             </div>
             <div class="col-lg-6">
@@ -222,9 +232,13 @@ const Home = () => {
                       Clita erat ipsum et lorem et sit, sed stet lorem sit clita
                       duo justo erat amet
                     </p>
-                    <a class="fw-semi-bold" href="">
+                    <Link
+                      class="fw-semi-bold"
+                      to=""
+                      style={{ fontWeight: "500" }}
+                    >
                       Read More <i class="fa fa-arrow-right ms-1"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -246,11 +260,13 @@ const Home = () => {
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             Our Services
           </p>
-          <h1 class="display-5 mb-5">Awesome Services For First Solution</h1>
+          <h1 class=" mb-5" style={{ fontSize: "2rem", fontWeight: "bold" }}>
+            Awesome Services For First Solution
+          </h1>
         </div>
         <div className="container-xxl wrapper">
           <div
-            class="row g-4 wow fadeInUp"
+            class="row g-4 wow fadeInUp services"
             data-wow-delay="0.3s"
             style={{
               visibility: "visible",
@@ -459,104 +475,119 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <Button
+          <button
+            className="btn btn-primary text-center "
             style={{
               padding: "20px 30px",
               margin: "5rem auto",
+              fontWeight: "500",
+              display: "flex",
+              justifyContent: "center",
             }}
             onClick={() => {
               nav("/services");
             }}
           >
-            Explore More Services
-          </Button>
+            Explore More Services <MdKeyboardDoubleArrowRight size={25} />
+          </button>
         </div>
       </ServicesContainer>
       <Testimonial>
-        <MDBContainer className="py-5 mb-5">
-          <MDBRow className="d-flex justify-content-center">
-            <MDBCol md="10" xl="8" className="text-center">
-              <h3 className="mb-4">Testimonials</h3>
-              <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-                error amet numquam iure provident voluptate esse quasi,
-                veritatis totam voluptas nostrum quisquam eum porro a pariatur
-                veniam.
-              </p>
-            </MDBCol>
-          </MDBRow>
-          <MDBRow className="text-center d-flex align-items-stretch">
-            <MDBCol md="4" className="mb-5 mb-md-0 d-flex align-items-stretch">
-              <MDBCard className="testimonial-card">
-                <div
-                  className="card-up"
-                  style={{ backgroundColor: "#9d789b" }}
-                ></div>
-                <div className="avatar mx-auto bg-white">
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-                    className="rounded-circle img-fluid"
-                  />
-                </div>
-                <MDBCardBody>
-                  <h4 className="mb-4">Maria Smantha</h4>
-                  <hr />
-                  <p className="dark-grey-text mt-4">
-                    <MDBIcon fas icon="quote-left" className="pe-2" />
-                    Lorem ipsum dolor sit amet eos adipisci, consectetur
-                    adipisicing elit.
-                  </p>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-            <MDBCol md="4" className="mb-5 mb-md-0 d-flex align-items-stretch">
-              <MDBCard className="testimonial-card">
-                <div
-                  className="card-up"
-                  style={{ backgroundColor: "#7a81a8" }}
-                ></div>
-                <div className="avatar mx-auto bg-white">
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                    className="rounded-circle img-fluid"
-                  />
-                </div>
-                <MDBCardBody>
-                  <h4 className="mb-4">Lisa Cudrow</h4>
-                  <hr />
-                  <p className="dark-grey-text mt-4">
-                    <MDBIcon fas icon="quote-left" className="pe-2" />
-                    Neque cupiditate assumenda in maiores repudi mollitia
-                    architecto.
-                  </p>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-            <MDBCol md="4" className="mb-5 mb-md-0 d-flex align-items-stretch">
-              <MDBCard className="testimonial-card">
-                <div
-                  className="card-up"
-                  style={{ backgroundColor: "#6d5b98" }}
-                ></div>
-                <div className="avatar mx-auto bg-white">
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                    className="rounded-circle img-fluid"
-                  />
-                </div>
-                <MDBCardBody>
-                  <h4 className="mb-4">John Smith</h4>
-                  <hr />
-                  <p className="dark-grey-text mt-4">
-                    <MDBIcon fas icon="quote-left" className="pe-2" />
-                    Delectus impedit saepe officiis ab aliquam repellat rem unde
-                    ducimus.
-                  </p>
-                </MDBCardBody>
-              </MDBCard>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
+        <Testimonial>
+          <MDBContainer className="py-5 mb-5">
+            <MDBRow className="d-flex justify-content-center">
+              <MDBCol md="10" xl="8" className="text-center">
+                <h3 className="mb-4">Testimonials</h3>
+                <p className="mb-4 pb-2 mb-md-5 pb-md-0">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit, error amet numquam iure provident voluptate esse quasi,
+                  veritatis totam voluptas nostrum quisquam eum porro a pariatur
+                  veniam.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow className="text-center d-flex align-items-stretch">
+              <MDBCol
+                md="4"
+                className="mb-5 mb-md-0 d-flex align-items-stretch"
+              >
+                <MDBCard className="testimonial-card">
+                  <div
+                    className="card-up"
+                    style={{ backgroundColor: "#9d789b" }}
+                  ></div>
+                  <div className="avatar mx-auto bg-white">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                      className="rounded-circle img-fluid"
+                    />
+                  </div>
+                  <MDBCardBody>
+                    <h4 className="mb-4">Maria Smantha</h4>
+                    <hr />
+                    <p className="dark-grey-text mt-4">
+                      <MDBIcon fas icon="quote-left" className="pe-2" />
+                      Lorem ipsum dolor sit amet eos adipisci, consectetur
+                      adipisicing elit.
+                    </p>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol
+                md="4"
+                className="mb-5 mb-md-0 d-flex align-items-stretch"
+              >
+                <MDBCard className="testimonial-card">
+                  <div
+                    className="card-up"
+                    style={{ backgroundColor: "#7a81a8" }}
+                  ></div>
+                  <div className="avatar mx-auto bg-white">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                      className="rounded-circle img-fluid"
+                    />
+                  </div>
+                  <MDBCardBody>
+                    <h4 className="mb-4">Lisa Cudrow</h4>
+                    <hr />
+                    <p className="dark-grey-text mt-4">
+                      <MDBIcon fas icon="quote-left" className="pe-2" />
+                      Neque cupiditate assumenda in maiores repudi mollitia
+                      architecto.
+                    </p>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+              <MDBCol
+                md="4"
+                className="mb-5 mb-md-0 d-flex align-items-stretch"
+              >
+                <MDBCard className="testimonial-card">
+                  <div
+                    className="card-up"
+                    style={{ backgroundColor: "#6d5b98" }}
+                  ></div>
+                  <div className="avatar mx-auto bg-white">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                      className="rounded-circle img-fluid"
+                    />
+                  </div>
+                  <MDBCardBody>
+                    <h4 className="mb-4">John Smith</h4>
+                    <hr />
+                    <p className="dark-grey-text mt-4">
+                      <MDBIcon fas icon="quote-left" className="pe-2" />
+                      Delectus impedit saepe officiis ab aliquam repellat rem
+                      unde ducimus.
+                    </p>
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
+        </Testimonial>
       </Testimonial>
     </>
   );

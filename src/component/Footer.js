@@ -4,13 +4,10 @@ import "../style/Footerstyle.css";
 import { MdCall } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
-import {
-  BsFillArrowUpCircleFill,
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsYoutube,
-} from "react-icons/bs";
+import { FaFacebook } from "react-icons/fa";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
+import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 
 const Scrolltop = styled.div`
   position: relative;
@@ -57,9 +54,9 @@ const Footer = () => {
     <>
       <footer class="footer-section">
         <div class="footer-top py-5 ">
-          <div class="container-xxl wrapper">
-            <div class="row  ">
-              <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="container-xxl footer wrapper">
+            <div class="row ">
+              <div class="col-lg-3 col-md-6 col-sm-6 ">
                 <div class="widget company-intro-widget">
                   <a href="index.html" class="site-logo">
                     <img src="Images/Firstsolution.png" alt="logo" />
@@ -97,7 +94,7 @@ const Footer = () => {
                   </span>
                   <span>
                     <Link className="text-white" to="">
-                      <BsGithub />
+                      <FaFacebook />
                     </Link>
                   </span>
                   <span>
@@ -112,78 +109,84 @@ const Footer = () => {
                   </span>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="col-lg-3 col-md-6 col-sm-6  footer">
                 <div
                   class="widget course-links-widget"
                   // style={{ marginLeft: "50px" }}
                 >
-                  <h5 class="widget-title">Services</h5>
+                  <h5 class="widget-title font-semibold">Services</h5>
                   <ul class="courses-link-list">
                     <li>
-                      <a href="#">
-                        <i class="fas fa-long-arrow-alt-right"></i>
+                      <a href="#tab-pane-1">
+                        <MdKeyboardDoubleArrowRight size={25} />
                         Banking
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fas fa-long-arrow-alt-right"></i>
+                      <a href="#tab-pane-2">
+                        <MdKeyboardDoubleArrowRight size={25} />
                         Finance
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fas fa-long-arrow-alt-right"></i>Insurance
+                      <a href="#tab-pane-3">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        Insurance
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fas fa-long-arrow-alt-right"></i>IT Sector
+                      <a href="#tab-pane-4">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        IT Sector
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fas fa-long-arrow-alt-right"></i>Telecom
+                      <a href="#tab-pane-5">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        Telecom
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fas fa-long-arrow-alt-right"></i>Retail
+                      <a href="#tab-pane-6">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        Retail
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="col-lg-3 col-md-6 col-sm-6 footer">
                 <div class="widget courses-link-list">
                   <h5 class="widget-title">Quick Link</h5>
                   <ul class="courses-link-list">
                     <li>
-                      <a href="#">
-                        <i class="fas fa-long-arrow-alt-right"></i>About
-                      </a>
+                      <Link to="/about">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        About
+                      </Link>
                     </li>
                     <li>
-                      <a href="/contact">
-                        <i class="fas fa-long-arrow-alt-right"></i>Contact
-                      </a>
+                      <Link to="/contact">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        Contact
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
-                        <i class="fas fa-long-arrow-alt-right"></i>Privacy
-                        Policy
-                      </a>
+                      <Link to="/">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        Privacy Policy
+                      </Link>
                     </li>
                     <li>
-                      <a href="/">
-                        <i class="fas fa-long-arrow-alt-right"></i>Term &
-                        Condition
-                      </a>
+                      <Link to="/">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        Term & Condition
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="col-lg-3 col-md-6 col-sm-6 footer">
                 <div class="widget newsletter-widget">
                   <h5 class="widget-title">Newsletter</h5>
                   <div class="footer-newsletter">

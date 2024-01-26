@@ -32,7 +32,7 @@ export const ResumeContainer = styled.div`
 export const Button = styled.button`
   /* Adapt the colors based on primary prop */
   background: ${(props) => (props.$primary ? "palevioletred" : "white")};
-  color: ${(props) => (props.$primary ? "white" : "#5b04f1")};
+  color: ${(props) => (props.$primary ? "white" : "#b5ca59")};
   font-size: 1em;
   display: flex;
   padding: 0.45em 1em;
@@ -43,7 +43,7 @@ export const Button = styled.button`
     text-decoration: none;
   }
   &:hover {
-    background-color: #5b04f1;
+    background-color: #b5ca59;
     color: white;
     a {
       color: white;

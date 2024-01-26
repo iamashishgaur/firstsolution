@@ -84,7 +84,7 @@ const Navbar = () => {
                 </li>
               );
             })}
-            <Button>Get Start</Button>
+            <button className="btn btn-primary">Get Start</button>
           </NavMenu>
         </div>
       </NavbarContainer>
