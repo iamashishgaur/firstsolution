@@ -165,7 +165,7 @@ export const ProjectField = styled(SummaryFiels)`
   }
 `;
 
-export const ResumeHeaderTitle = styled.div`
+export const HeaderTitle = styled.div`
   span {
     font-size: 3rem;
     font-weight: bold;

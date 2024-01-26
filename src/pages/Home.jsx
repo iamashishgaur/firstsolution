@@ -14,11 +14,10 @@ import {
 } from "mdb-react-ui-kit";
 import {
   BannerLeft,
-  ResumeHeaderTitle,
-  Button,
   AboutusContainer,
   ServicesContainer,
   Testimonial,
+  HeaderTitle,
 } from "../style/Commenstyle";
 
 const Home = () => {
@@ -30,7 +29,7 @@ const Home = () => {
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12">
             <BannerLeft>
-              <ResumeHeaderTitle>
+              <HeaderTitle>
                 <span>
                   Build a Career By First Solution Recruitment Consultancy
                 </span>
@@ -38,7 +37,7 @@ const Home = () => {
                   Never Ending Solution Make Our Career Easily with our First
                   Solution Recruitment Consultancy.
                 </p>
-              </ResumeHeaderTitle>
+              </HeaderTitle>
               <button
                 class="btn btn-primary"
                 style={{
