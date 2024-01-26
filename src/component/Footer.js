@@ -1,38 +1,18 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import "../style/Footerstyle.css";
 import { MdCall } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-
 import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 
-const Scrolltop = styled.div`
-  position: relative;
-  svg {
-    position: absolute;
-    margin-top: -55px;
-    width: 40px;
-    height: 40px;
-    color: white;
-    right: 80px;
-    color: #fff;
-    fill: #4d12dc;
-    cursor: pointer;
-  }
-`;
 const Footer = () => {
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   const [visible, isVisible] = useState(false);
-
-  const gotoTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   const listentoscroll = () => {
     let heighttoHidden = 150;

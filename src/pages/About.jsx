@@ -1,11 +1,10 @@
 import React from "react";
 import { AboutusContainer } from "../style/Commenstyle";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 
 const About = () => {
-  const nav = useNavigate();
   return (
     <AboutusContainer className="py-3 mt-5 mb-5">
       <div

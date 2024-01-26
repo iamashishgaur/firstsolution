@@ -1,40 +1,4 @@
 import React from "react";
-import Layout from "../component/Layout";
-import styled from "styled-components";
-import contact from "../assets/contact.webp";
-const ContactContainer = styled.div`
-  width: 100%;
-  padding: 3rem 0px;
-  h4 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-  }
-`;
-const ContactMain = styled.div`
-  margin: 3rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`;
-const Contactformcontainer = styled.div`
-  width: 100%;
-  padding: 0 25px;
-  .message {
-    height: 100px;
-  }
-  & > h1 {
-    color: #011a41;
-    font-weight: 700;
-  }
-`;
-const ContactmapContainer = styled.div`
-  width: 100%;
-  border-radius: 10px;
-  .map {
-    border-radius: 10px;
-    border: 2px solid white;
-  }
-`;
 
 const Contact = () => {
   return (

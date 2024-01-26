@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { Button } from "../style/Commenstyle";
-import Layout from "./Layout";
-import FirstLogo from "../assets/First_Solution logo.jpg";
 import { MenuData } from "../data/MenuData";
 import { AiOutlineClose } from "react-icons/ai";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { RiMenu3Fill } from "react-icons/ri";
 
 const NavbarContainer = styled.div`
-  /* width: 100%; */
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
