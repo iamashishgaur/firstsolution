@@ -11,30 +11,6 @@ const NavbarContainer = styled.div`
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 `;
 
-// const NavLogo = styled.div`
-//   color: var(--footer);
-//   cursor: pointer;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   & > h2 {
-//     display: flex;
-//     font-weight: bold;
-//     justify-content: center;
-//     /* align-items: center; */
-//     gap: 5px;
-//     & > img {
-//       width: 60px;
-//       height: 60px;
-//     }
-//   }
-//   span {
-//     position: relative;
-//     top: 12px;
-//     right: 49%;
-//     font-size: 15px;
-//   }
-// `;
 const NavMenu = styled.div`
   display: flex;
   justify-content: center;

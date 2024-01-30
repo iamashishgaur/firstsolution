@@ -2,10 +2,13 @@ import React from "react";
 import { ServicesContainer } from "../style/Commenstyle";
 import { FiMenu } from "react-icons/fi";
 import { FaRegCheckCircle } from "react-icons/fa";
+import Meta from "../component/Meta";
+import GoToTop from "../component/Gototop";
 
 const Services = () => {
   return (
     <>
+      <Meta title={"Services"} />
       <ServicesContainer className="py-3 mt-5">
         <div
           class="text-center mx-auto wow fadeInUp"
@@ -33,11 +36,11 @@ const Services = () => {
             }}
           >
             <div className="writepen col-lg-12 col-md-12 col-sm-12">
-              {/* <img
+              <img
                 src="Images/pen.jpg"
                 className="img-fluid rounded"
                 alt="main-banner"
-              /> */}
+              />
               <p className="abouttext">
                 First Solution most important strength is its domain knowledge
                 of the various industry sectors it operates in. First Solution
@@ -569,6 +572,7 @@ const Services = () => {
           </div>
         </div>
       </ServicesContainer>
+      <GoToTop />
     </>
   );
 };

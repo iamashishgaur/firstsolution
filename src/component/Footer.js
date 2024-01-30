@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../style/Footerstyle.css";
+import { Link } from "react-router-dom";
 import { MdCall } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
-import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import { GiRotaryPhone } from "react-icons/gi";
 
 const Footer = () => {
   useEffect(() => {
@@ -42,8 +43,8 @@ const Footer = () => {
                     <img src="Images/Firstsolution.png" alt="logo" />
                   </a>
                   <p>
-                    116, Ostwal Shopping Centre, Opp. Railway Station, Jesal
-                    Park Corner, Bhayander (East), Thane- 401105
+                    Office No. 45 Sonam Mayuresh Chs Ltd. Near Blue Moon Club,
+                    Golden Nest Phase-3 Bhayander East, Thane- 401105.
                   </p>
                   <ul class="company-footer-contact-list">
                     <li className="d-flex gap-2">
@@ -52,7 +53,16 @@ const Footer = () => {
                         href="tel:+91 9320020421"
                         style={{ color: "white", fontWeight: "500" }}
                       >
-                        +91 9320020421
+                        +91 9320020421 / 8424000595
+                      </a>
+                    </li>
+                    <li className="d-flex gap-2">
+                      <GiRotaryPhone size={20} />
+                      <a
+                        href="tel:+91 9320020421"
+                        style={{ color: "white", fontWeight: "500" }}
+                      >
+                        02279619595
                       </a>
                     </li>
                     <li className="d-flex gap-2">
@@ -66,7 +76,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="social-icons">
+                {/* <div className="social-icons">
                   <span>
                     <Link className="text-white" to="">
                       <BsLinkedin />
@@ -87,7 +97,7 @@ const Footer = () => {
                       <BsYoutube className="fs-4" />
                     </Link>
                   </span>
-                </div>
+                </div> */}
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6  footer">
                 <div
@@ -146,6 +156,12 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
+                      <Link to="/about-founder">
+                        <MdKeyboardDoubleArrowRight size={25} />
+                        About Founder
+                      </Link>
+                    </li>
+                    <li>
                       <Link to="/contact">
                         <MdKeyboardDoubleArrowRight size={25} />
                         Contact
@@ -168,8 +184,30 @@ const Footer = () => {
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 footer">
                 <div class="widget newsletter-widget">
-                  <h5 class="widget-title">Newsletter</h5>
-                  <div class="footer-newsletter">
+                  <h5 class="widget-title">Get In Touch</h5>
+                  <div className="social-icons">
+                    <span>
+                      <Link className="text-white" to="">
+                        <BsLinkedin />
+                      </Link>
+                    </span>
+                    <span>
+                      <Link className="text-white" to="">
+                        <FaFacebook />
+                      </Link>
+                    </span>
+                    <span>
+                      <Link className="text-white" to="">
+                        <BsInstagram />
+                      </Link>
+                    </span>
+                    <span>
+                      <Link className="text-white" to="">
+                        <BsYoutube className="fs-4" />
+                      </Link>
+                    </span>
+                  </div>
+                  <div class="footer-newsletter mt-3">
                     <p>
                       Sign Up to Our Newsletter to Get Latest Updates & Services
                     </p>

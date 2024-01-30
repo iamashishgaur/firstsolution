@@ -3,69 +3,91 @@ import { FiMenu } from "react-icons/fi";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCol,
-  MDBContainer,
-  MDBIcon,
-  MDBRow,
-} from "mdb-react-ui-kit";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+import Marquee from "react-fast-marquee";
 import {
   BannerLeft,
   AboutusContainer,
   ServicesContainer,
-  Testimonial,
   HeaderTitle,
 } from "../style/Commenstyle";
+import styled from "styled-components";
+import Testimonials from "../component/Testimonials";
+import GoToTop from "../component/Gototop";
+const HeroBanner = styled.div``;
 
 const Home = () => {
   const nav = useNavigate();
 
   return (
     <>
-      <div className="container-xxl wrapper py-5 mb-5">
-        <div className="row">
-          <div className="col-lg-6 col-md-12 col-sm-12">
-            <BannerLeft>
-              <HeaderTitle>
-                <span>
-                  Build a Career By First Solution Recruitment Consultancy
-                </span>
-                <p>
-                  Never Ending Solution Make Our Career Easily with our First
-                  Solution Recruitment Consultancy.
-                </p>
-              </HeaderTitle>
-              <button
-                class="btn btn-primary"
-                style={{
-                  marginTop: "1.5rem",
-                  padding: "15px 30px",
-                  fontWeight: "500",
-                }}
-                onClick={() => {
-                  nav("/");
-                }}
-              >
-                Explore More <MdKeyboardDoubleArrowRight size={25} />
-              </button>
-            </BannerLeft>
-          </div>
-          <div className="col-lg-6 col-md-12 col-sm-12 flex-col-reverse">
-            <div className="main-banner position-relative ">
-              <img
-                src="Images/banner.png"
-                className="img-fluid rounded"
-                alt="main-banner"
-              />
+      {/* Home Banner Start  */}
+      <HeroBanner>
+        <div className="container-xxl wrapper py-5 mb-5">
+          <div className="row ">
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <BannerLeft>
+                <HeaderTitle>
+                  <span>
+                    Build a Career By First Solution Recruitment Consultancy
+                  </span>
+                  <p>
+                    Never Ending Solution Make Our Career Easily with our First
+                    Solution Recruitment Consultancy.
+                  </p>
+                </HeaderTitle>
+                <button
+                  class="btn btn-primary"
+                  style={{
+                    marginTop: "1.5rem",
+                    padding: "15px 30px",
+                    fontWeight: "500",
+                  }}
+                  onClick={() => {
+                    nav("/");
+                  }}
+                >
+                  Explore More <MdKeyboardDoubleArrowRight size={25} />
+                </button>
+              </BannerLeft>
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 flex-col-reverse">
+              <div className="main-banner position-relative ">
+                <img
+                  src="Images/banner.png"
+                  className="img-fluid rounded"
+                  alt="main-banner"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </HeroBanner>
+      .{/* Home Banner End */}
+      {/* Marquee Start*/}
+      {/* <div className="container-xxl wrapper">
+        <Marquee>
+          <div className="logo">
+            <span>
+              <img src="Images/SBI_Life.jpg" alt="logo" />
+            </span>
+            <span>
+              <img src="Images/kotak.png" alt="logo" />
+            </span>
+            <span>
+              <img src="Images/max.png" alt="logo" />
+            </span>
+          </div>
+        </Marquee>
+      </div> */}
+      {/* Marquee End*/}
       <AboutusContainer className="py-3 mt-5 mb-5">
-        <div
+        <motion.div
+          variants={fadeIn("up", 0.7)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
           class="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
           style={{
@@ -81,10 +103,16 @@ const Home = () => {
           <h1 class=" mb-5" style={{ fontSize: "2rem", fontWeight: "bold" }}>
             About For First Solution
           </h1>
-        </div>
+        </motion.div>
         <div className="container-xxl wrapper">
           <div className="row ">
-            <div className="col-lg-6 col-md-12 col-sm-12">
+            <div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="col-lg-6 col-md-12 col-sm-12"
+            >
               <div className="main-banner position-relative ">
                 <img
                   src="Images/avatar-3.jpg"
@@ -94,11 +122,21 @@ const Home = () => {
               </div>
             </div>
             <div className="writepen col-lg-6 col-md-12 col-sm-12">
-              <img
-                src="Images/pen.jpg"
-                className="img-fluid rounded"
-                alt="main-banner"
-              />
+              <div className="founder">
+                <img
+                  src="Images/pen.jpg"
+                  className="img-fluid rounded"
+                  alt="main-banner"
+                />
+                <span>
+                  <p className="mb-1">Founder</p>
+                  <h4>Gayatri Dubey</h4>
+                  <Link className="btn btn-primary" to="/about-founder">
+                    About Founder
+                  </Link>
+                </span>
+              </div>
+
               <div className="mt-2">
                 <p className="abouttext">
                   A team of first generation entrepreneurs promotes First
@@ -133,118 +171,104 @@ const Home = () => {
           </div>
         </div>
       </AboutusContainer>
-      <div class="container-xxl feature py-5 mt-5 mb-5">
-        <div class="container">
-          <div class="row g-5 align-items-center">
-            <div
-              class="col-lg-6 wow fadeInUp"
-              data-wow-delay="0.1s"
-              style={{
-                visibility: "visible",
-                animationDelay: "0.7s",
-                animationName: "fadeIn",
-              }}
-            >
-              <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-                What We Do !
-              </p>
-              <h1 class="mb-4" style={{ fontSize: "3rem", fontWeight: "bold" }}>
-                Few Reasons Why People Choosing Us!
-              </h1>
-              <p class="mb-4">
-                Many firms that place newspaper advertisements for staff are
-                unaware of the benefits of a professional recruitment firm like
-                First Solution . We are able to offer our clients access to many
-                qualified candidates who are gainfully employed and are not
-                necessarily looking for opportunities or responding to
-                advertisements. These potential applicants will rarely admit
-                that they might consider a move for fear they might jeopardize
-                their current job. However, when professionally and discretely
-                approached by a trained First Solution , our candidates tend to
-                respond.
-              </p>
-              <Link class="btn btn-primary py-3 px-5" href="">
-                Explore More <MdKeyboardDoubleArrowRight size={25} />
-              </Link>
-            </div>
-            <div class="col-lg-6">
-              <div class="row g-4 align-items-center">
-                <div class="col-md-6">
-                  <div class="row g-4">
-                    <div
-                      class="col-12 wow fadeIn"
-                      data-wow-delay="0.3s"
-                      style={{
-                        visibility: "visible",
-                        animationDelay: "0.7s",
-                        animationName: "fadeIn",
-                      }}
-                    >
-                      <div class="feature-box border rounded p-4">
-                        <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                        <h4 class="mb-3">Fast Executions</h4>
-                        <p class="mb-3">
-                          Clita erat ipsum et lorem et sit, sed stet lorem sit
-                          clita duo justo erat amet
-                        </p>
-                        <Link class="fw-semi-bold" href="">
-                          Read More <i class="fa fa-arrow-right ms-1"></i>
-                        </Link>
-                      </div>
+      <div
+        class="container-xxl wrapper feature py-5 mt-5 mb-5"
+        style={{ backgroundColor: "#e1f5fe63" }}
+      >
+        <div class="row g-5 align-items-center">
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style={{
+              visibility: "visible",
+              animationDelay: "0.7s",
+              animationName: "fadeIn",
+            }}
+          >
+            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
+              What We Do !
+            </p>
+            <h1 class="mb-4" style={{ fontSize: "2.6rem", fontWeight: "bold" }}>
+              Few Reasons Why People Choosing First Solution!
+            </h1>
+            <p class="mb-4">
+              Many firms that place newspaper advertisements for staff are
+              unaware of the benefits of a professional recruitment firm like
+              First Solution . We are able to offer our clients access to many
+              qualified candidates who are gainfully employed and are not
+              necessarily looking for opportunities or responding to
+              advertisements.
+            </p>
+            <Link class="btn btn-primary py-3 px-5" href="">
+              Explore More <MdKeyboardDoubleArrowRight size={25} />
+            </Link>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6">
+                <div class="row g-4">
+                  <div
+                    class="col-12 wow fadeIn"
+                    data-wow-delay="0.3s"
+                    style={{
+                      visibility: "visible",
+                      animationDelay: "0.7s",
+                      animationName: "fadeIn",
+                    }}
+                  >
+                    <div class="feature-box border rounded p-4">
+                      <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                      <h4 class="mb-3">Fast Executions</h4>
+                      <p class="mb-3">
+                        Clita erat ipsum et lorem et sit, sed stet lorem sit
+                        clita duo justo erat amet
+                      </p>
                     </div>
-                    <div
-                      class="col-12 wow fadeIn"
-                      data-wow-delay="0.5s"
-                      style={{
-                        visibility: "visible",
-                        animationDelay: "0.7s",
-                        animationName: "fadeIn",
-                      }}
-                    >
-                      <div class="feature-box border rounded p-4">
-                        <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                        <h4 class="mb-3">Guide &amp; Support</h4>
-                        <p class="mb-3">
-                          Clita erat ipsum et lorem et sit, sed stet lorem sit
-                          clita duo justo erat amet
-                        </p>
-                        <Link class="fw-semi-bold" href="">
-                          Read More <i class="fa fa-arrow-right ms-1"></i>
-                        </Link>
-                      </div>
+                  </div>
+                  <div
+                    class="col-12 wow fadeIn"
+                    data-wow-delay="0.5s"
+                    style={{
+                      visibility: "visible",
+                      animationDelay: "0.7s",
+                      animationName: "fadeIn",
+                    }}
+                  >
+                    <div class="feature-box border rounded p-4">
+                      <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                      <h4 class="mb-3">Guide &amp; Support</h4>
+                      <p class="mb-3">
+                        Clita erat ipsum et lorem et sit, sed stet lorem sit
+                        clita duo justo erat amet
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-md-6 wow fadeIn"
-                  data-wow-delay="0.7s"
-                  style={{
-                    visibility: "visible",
-                    animationDelay: "0.7s",
-                    animationName: "fadeIn",
-                  }}
-                >
-                  <div class="feature-box border rounded p-4">
-                    <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                    <h4 class="mb-3">Financial Secure</h4>
-                    <p class="mb-3">
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo erat amet
-                    </p>
-                    <Link
-                      class="fw-semi-bold"
-                      to=""
-                      style={{ fontWeight: "500" }}
-                    >
-                      Read More <i class="fa fa-arrow-right ms-1"></i>
-                    </Link>
-                  </div>
+              </div>
+              <div
+                class="col-md-6 wow fadeIn"
+                data-wow-delay="0.7s"
+                style={{
+                  visibility: "visible",
+                  animationDelay: "0.7s",
+                  animationName: "fadeIn",
+                }}
+              >
+                <div class="feature-box border rounded p-4">
+                  <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                  <h4 class="mb-3">Financial Secure</h4>
+                  <p class="mb-3">
+                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita
+                    duo justo erat amet
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* Why Choose Us End */}
+      {/* Services Start */}
       <ServicesContainer className="py-3 mt-5">
         <div
           class="text-center mx-auto wow fadeInUp"
@@ -336,9 +360,7 @@ const Home = () => {
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
+                      <h3 class="mb-4">Banking</h3>
                       <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
@@ -347,15 +369,15 @@ const Home = () => {
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
-                        Secured Loans
+                        Best Place
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
-                        Credit Facilities
+                        Job Garanity
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
-                        Cash Advanced
+                        Fast Service
                       </p>
                     </div>
                   </div>
@@ -491,106 +513,11 @@ const Home = () => {
           </button>
         </div>
       </ServicesContainer>
-      <Testimonial>
-        <Testimonial>
-          <MDBContainer className="py-5 mb-5">
-            <MDBRow className="d-flex justify-content-center">
-              <MDBCol md="10" xl="8" className="text-center">
-                <h3 className="mb-4">Testimonials</h3>
-                <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Fugit, error amet numquam iure provident voluptate esse quasi,
-                  veritatis totam voluptas nostrum quisquam eum porro a pariatur
-                  veniam.
-                </p>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow className="text-center d-flex align-items-stretch">
-              <MDBCol
-                md="4"
-                className="mb-5 mb-md-0 d-flex align-items-stretch"
-              >
-                <MDBCard className="testimonial-card">
-                  <div
-                    className="card-up"
-                    style={{ backgroundColor: "#9d789b" }}
-                  ></div>
-                  <div className="avatar mx-auto bg-white">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-                      className="rounded-circle img-fluid "
-                      alt=""
-                    />
-                  </div>
-                  <MDBCardBody>
-                    <h4 className="mb-4">Maria Smantha</h4>
-                    <hr />
-                    <p className="dark-grey-text mt-4">
-                      <MDBIcon fas icon="quote-left" className="pe-2" />
-                      Lorem ipsum dolor sit amet eos adipisci, consectetur
-                      adipisicing elit.
-                    </p>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol
-                md="4"
-                className="mb-5 mb-md-0 d-flex align-items-stretch"
-              >
-                <MDBCard className="testimonial-card">
-                  <div
-                    className="card-up"
-                    style={{ backgroundColor: "#7a81a8" }}
-                  ></div>
-                  <div className="avatar mx-auto bg-white">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                      className="rounded-circle img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <MDBCardBody>
-                    <h4 className="mb-4">Lisa Cudrow</h4>
-                    <hr />
-                    <p className="dark-grey-text mt-4">
-                      <MDBIcon fas icon="quote-left" className="pe-2" />
-                      Neque cupiditate assumenda in maiores repudi mollitia
-                      architecto.
-                    </p>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-              <MDBCol
-                md="4"
-                className="mb-5 mb-md-0 d-flex align-items-stretch"
-              >
-                <MDBCard className="testimonial-card">
-                  <div
-                    className="card-up"
-                    style={{ backgroundColor: "#6d5b98" }}
-                  ></div>
-                  <div className="avatar mx-auto bg-white">
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                      className="rounded-circle img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <MDBCardBody>
-                    <h4 className="mb-4">John Smith</h4>
-                    <hr />
-                    <p className="dark-grey-text mt-4">
-                      <MDBIcon fas icon="quote-left" className="pe-2" />
-                      Delectus impedit saepe officiis ab aliquam repellat rem
-                      unde ducimus.
-                    </p>
-                  </MDBCardBody>
-                </MDBCard>
-              </MDBCol>
-            </MDBRow>
-          </MDBContainer>
-        </Testimonial>
-      </Testimonial>
+      {/* Services End */}
+      {/* Testimonials Start */}
+      <Testimonials />
+      {/* Testimonials End */}
+      <GoToTop />
     </>
   );
 };

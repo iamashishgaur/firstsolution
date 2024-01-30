@@ -1,8 +1,16 @@
 import React from "react";
+import Meta from "../component/Meta";
+import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { MdCall } from "react-icons/md";
+import { IoIosMail } from "react-icons/io";
+import { GiRotaryPhone } from "react-icons/gi";
+import GoToTop from "../component/Gototop";
 
 const Contact = () => {
   return (
     <>
+      <Meta title={"Contact Us "} />
       <div
         class="text-center mx-auto wow fadeInUp mt-5"
         data-wow-delay="0.1s"
@@ -16,71 +24,64 @@ const Contact = () => {
         <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
           Contact Us
         </p>
-        <h1 class="display-5 mb-5">Contact Us For First Solution</h1>
+        <h1 class=" mb-5">Contact Us For First Solution</h1>
       </div>
 
       <div className="container-xxl wrapper py-5 mb-5">
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12">
-            <h1 class="display-5 mb-4">
-              If You Have Any Query, Please Contact Us
-            </h1>
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                    />
-                    <label for="name">Your Name</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Your Email"
-                    />
-                    <label for="email">Your Email</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Subject"
-                      spellcheck="false"
-                      data-ms-editor="true"
-                    />
-                    <label for="subject">Subject</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control message"
-                      placeholder="Leave a message here"
-                      id="message"
-                      spellcheck="false"
-                      data-ms-editor="true"
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary py-3 px-5" type="submit">
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
+            <h1 class=" mb-4">If You Have Any Query, Please Contact Us</h1>
+            <div className="addressbox">
+              <span>
+                  <FaLocationDot />
+              </span>
+              <p className="">
+                <i
+                  class="fas fa-quote-left pe-2"
+                  style={{ color: "#b5ca59" }}
+                ></i>
+                Office No. 45 Sonam Mayuresh Chs Ltd. Near Blue Moon Club,
+                Golden Nest Phase-3 Bhayander East, Thane- 401105.
+              </p>
+              <ul class="company-footer-contact-list">
+                <li className="d-flex gap-2">
+                  <MdCall
+                    size={20}
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  />
+                  <a
+                    href="tel:+91 9320020421"
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  >
+                    +91 9320020421 | 8424000595 | 8424000955
+                  </a>
+                </li>
+                <li className="d-flex gap-2">
+                  <GiRotaryPhone
+                    size={20}
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  />
+                  <a
+                    href="tel:+91 9320020421"
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  >
+                    02279619595
+                  </a>
+                </li>
+                <li className="d-flex gap-2">
+                  <IoIosMail
+                    size={20}
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  />
+                  <a
+                    href="mailto:first_solution@rediffmail.com "
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  >
+                    first_solution@rediffmail.com{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12">
             <iframe
@@ -96,6 +97,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <GoToTop />
     </>
   );
 };

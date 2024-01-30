@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Services from "./pages/Services";
+import AboutFounder from "./pages/AboutFounder";
+import PageNotfound from "./pages/PageNotfound";
 function App() {
   return (
     <>
@@ -16,6 +18,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/about-founder" element={<AboutFounder />} />
+          <Route path="*" element={<PageNotfound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
