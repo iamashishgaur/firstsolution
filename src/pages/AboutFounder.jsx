@@ -12,11 +12,11 @@ const AboutFounder = () => {
         <div class="container-xxl wrapper">
           <div class="row gy-3 gy-md-4 gy-lg-0 mt-5 about-founder">
             <div class="col-lg-7 col-md-6 col-sm-6 ">
-              <h2 class="mb-3">Mr. Gayatri Dubey</h2>
+              <h2 class="mb-3">Mr. Gayatriprasad Dubey</h2>
               <p class=" mb-3">
-                Mr. Gayatri Dubey is a founder of the company First Solution. He
-                is an MBA by qualification from the renowned institute of
-                Wellingkars, Mumbai. He has more than 12 years of experience in
+                Mr. Gayatriprasad Dubey is a founder of the company First
+                Solution. He is an Graduation. am working more than 10 year of
+                sales and management. He has more than 10 years of experience in
                 the field of Recruitment Consultancy.
               </p>
               <p class="mb-5">

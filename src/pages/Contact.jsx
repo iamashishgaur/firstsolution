@@ -1,7 +1,6 @@
 import React from "react";
 import Meta from "../component/Meta";
 import { FaLocationDot } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 import { MdCall } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { GiRotaryPhone } from "react-icons/gi";
@@ -33,7 +32,7 @@ const Contact = () => {
             <h1 class=" mb-4">If You Have Any Query, Please Contact Us</h1>
             <div className="addressbox">
               <span>
-                  <FaLocationDot />
+                <FaLocationDot />
               </span>
               <p className="">
                 <i
@@ -80,12 +79,24 @@ const Contact = () => {
                     first_solution@rediffmail.com{" "}
                   </a>
                 </li>
+                <li className="d-flex gap-2">
+                  <IoIosMail
+                    size={20}
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  />
+                  <a
+                    href="mailto:Gayatrid.firstsolution@gmail.com "
+                    style={{ color: "#011a41", fontWeight: "500" }}
+                  >
+                    Gayatrid.firstsolution@gmail.com
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482633.0405020231!2d72.55150845680824!3d19.082606792016964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1692602010963!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15061.411145020034!2d72.84374123114578!3d19.310491961725607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b02abaffffe3%3A0xeeb266248e0670e!2sFirst%20Solution!5e0!3m2!1sen!2sin!4v1706777476424!5m2!1sen!2sin"
               width="100%"
               height="100%"
               className="map"

@@ -14,6 +14,7 @@ const Testimonials = () => {
           visibility: "visible",
           animationDelay: "0.1s",
           animationName: "fadeInUp",
+          fontWeight: "bold",
         }}
       >
         <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">

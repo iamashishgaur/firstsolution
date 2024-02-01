@@ -1,21 +1,25 @@
 import React from "react";
-import { FiMenu } from "react-icons/fi";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Marquee from "react-fast-marquee";
+import styled from "styled-components";
+import Testimonials from "../component/Testimonials";
+import GoToTop from "../component/Gototop";
+import MarqueeLogo from "../component/MarqueeLogo";
 import {
   BannerLeft,
   AboutusContainer,
   ServicesContainer,
   HeaderTitle,
 } from "../style/Commenstyle";
-import styled from "styled-components";
-import Testimonials from "../component/Testimonials";
-import GoToTop from "../component/Gototop";
-const HeroBanner = styled.div``;
+const HeroBanner = styled.div`
+  background-color: #e1f5fe63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Home = () => {
   const nav = useNavigate();
@@ -25,8 +29,8 @@ const Home = () => {
       {/* Home Banner Start  */}
       <HeroBanner>
         <div className="container-xxl wrapper py-5 mb-5">
-          <div className="row ">
-            <div className="col-lg-6 col-md-12 col-sm-12">
+          <div className="row gy-3 herobanner ">
+            <div className="col-lg-6 col-md-12 col-sm-12 mt-5">
               <BannerLeft>
                 <HeaderTitle>
                   <span>
@@ -52,10 +56,10 @@ const Home = () => {
                 </button>
               </BannerLeft>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 flex-col-reverse">
+            <div className="col-lg-6 col-md-12 col-sm-12 herobanner">
               <div className="main-banner position-relative ">
                 <img
-                  src="Images/banner.png"
+                  src="Images/first-solution-banner.webp"
                   className="img-fluid rounded"
                   alt="main-banner"
                 />
@@ -65,23 +69,7 @@ const Home = () => {
         </div>
       </HeroBanner>
       .{/* Home Banner End */}
-      {/* Marquee Start*/}
-      {/* <div className="container-xxl wrapper">
-        <Marquee>
-          <div className="logo">
-            <span>
-              <img src="Images/SBI_Life.jpg" alt="logo" />
-            </span>
-            <span>
-              <img src="Images/kotak.png" alt="logo" />
-            </span>
-            <span>
-              <img src="Images/max.png" alt="logo" />
-            </span>
-          </div>
-        </Marquee>
-      </div> */}
-      {/* Marquee End*/}
+      <MarqueeLogo />
       <AboutusContainer className="py-3 mt-5 mb-5">
         <motion.div
           variants={fadeIn("up", 0.7)}
@@ -95,6 +83,7 @@ const Home = () => {
             visibility: "visible",
             animationDelay: "0.1s",
             animationName: "fadeInUp",
+            fontWeight: "bold",
           }}
         >
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
@@ -104,25 +93,19 @@ const Home = () => {
             About For First Solution
           </h1>
         </motion.div>
-        <div className="container-xxl wrapper">
+        <div className="container-xxl wrapper mt-5">
           <div className="row ">
-            <div
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="col-lg-6 col-md-12 col-sm-12"
-            >
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="main-banner position-relative ">
                 <img
-                  src="Images/avatar-3.jpg"
+                  src="Images/about.jpg"
                   className="img-fluid rounded"
                   alt="main-banner"
                 />
               </div>
             </div>
             <div className="writepen col-lg-6 col-md-12 col-sm-12">
-              <div className="founder">
+              <div className="founder mt-3">
                 <img
                   src="Images/pen.jpg"
                   className="img-fluid rounded"
@@ -137,7 +120,7 @@ const Home = () => {
                 </span>
               </div>
 
-              <div className="mt-2">
+              <div className="mt-2 ">
                 <p className="abouttext">
                   A team of first generation entrepreneurs promotes First
                   Solution global organizations in recruitment & resourcing,
@@ -175,7 +158,7 @@ const Home = () => {
         class="container-xxl wrapper feature py-5 mt-5 mb-5"
         style={{ backgroundColor: "#e1f5fe63" }}
       >
-        <div class="row g-5 align-items-center">
+        <div class="row  align-items-center">
           <div
             class="col-lg-6 wow fadeInUp"
             data-wow-delay="0.1s"
@@ -183,6 +166,7 @@ const Home = () => {
               visibility: "visible",
               animationDelay: "0.7s",
               animationName: "fadeIn",
+              fontWeight: "bold",
             }}
           >
             <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
@@ -218,10 +202,10 @@ const Home = () => {
                   >
                     <div class="feature-box border rounded p-4">
                       <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                      <h4 class="mb-3">Fast Executions</h4>
+                      <h4 class="mb-3">Best Place</h4>
                       <p class="mb-3">
-                        Clita erat ipsum et lorem et sit, sed stet lorem sit
-                        clita duo justo erat amet
+                        First solution recruitment consultancy is Provid a jobs
+                        for best place.
                       </p>
                     </div>
                   </div>
@@ -236,10 +220,10 @@ const Home = () => {
                   >
                     <div class="feature-box border rounded p-4">
                       <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                      <h4 class="mb-3">Guide &amp; Support</h4>
+                      <h4 class="mb-3">Job &amp; Garanity</h4>
                       <p class="mb-3">
-                        Clita erat ipsum et lorem et sit, sed stet lorem sit
-                        clita duo justo erat amet
+                        First solution recruitment consultancy is provid a jobs
+                        for Job Guarantee.
                       </p>
                     </div>
                   </div>
@@ -256,10 +240,10 @@ const Home = () => {
               >
                 <div class="feature-box border rounded p-4">
                   <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                  <h4 class="mb-3">Financial Secure</h4>
+                  <h4 class="mb-3">Fast Service</h4>
                   <p class="mb-3">
-                    Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                    duo justo erat amet
+                    First solution recruitment consultancy is provid a jobs for
+                    Fast Services.
                   </p>
                 </div>
               </div>
@@ -278,14 +262,13 @@ const Home = () => {
             visibility: "visible",
             animationDelay: "0.1s",
             animationName: "fadeInUp",
+            fontWeight: "bold",
           }}
         >
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             Our Services
           </p>
-          <h1 class=" mb-5" style={{ fontSize: "2rem", fontWeight: "bold" }}>
-            Awesome Services For First Solution
-          </h1>
+          <h1 class=" mb-5">Awesome Services For First Solution</h1>
         </div>
         <div className="container-xxl wrapper">
           <div
@@ -305,9 +288,9 @@ const Home = () => {
                   data-bs-target="#tab-pane-1"
                   type="button"
                 >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
+                  <h5 class="servicesname m-0 d-flex gap-2">
                     Banking
+                    <MdKeyboardDoubleArrowRight size={25} />
                   </h5>
                 </button>
                 <button
@@ -316,9 +299,8 @@ const Home = () => {
                   data-bs-target="#tab-pane-2"
                   type="button"
                 >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Finance
+                  <h5 class="servicesname m-0 d-flex gap-2">
+                    Finance <MdKeyboardDoubleArrowRight size={25} />
                   </h5>
                 </button>
                 <button
@@ -327,9 +309,9 @@ const Home = () => {
                   data-bs-target="#tab-pane-3"
                   type="button"
                 >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
+                  <h5 class="servicesname m-0 d-flex gap-2">
                     Securities
+                    <MdKeyboardDoubleArrowRight size={25} />
                   </h5>
                 </button>
                 <button
@@ -338,9 +320,9 @@ const Home = () => {
                   data-bs-target="#tab-pane-4"
                   type="button"
                 >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
+                  <h5 class="servicesname m-0 d-flex gap-2">
                     Insurance
+                    <MdKeyboardDoubleArrowRight size={25} />
                   </h5>
                 </button>
               </div>
@@ -362,21 +344,20 @@ const Home = () => {
                     <div class="col-md-6">
                       <h3 class="mb-4">Banking</h3>
                       <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
+                        if you are looking for a banking field job. First
+                        Solution Recruitment Consultancy provides for best
+                        banking jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Best Place
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Job Garanity
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Fast Service
                       </p>
                     </div>
@@ -395,25 +376,22 @@ const Home = () => {
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
+                      <h3 class="mb-4">Finance</h3>
                       <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
+                        if you are looking for a Finace field job. First
+                        Solution Recruitment Consultancy provides for best
+                        Finance jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Secured Loans
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Credit Facilities
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Cash Advanced
                       </p>
                     </div>
@@ -432,25 +410,22 @@ const Home = () => {
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
+                      <h3 class="mb-4">Securities</h3>
                       <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
+                        if you are looking for a Securities field job. First
+                        Solution Recruitment Consultancy provides for best
+                        Securities Gaurd jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Secured Loans
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Credit Facilities
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Cash Advanced
                       </p>
                     </div>
@@ -469,25 +444,22 @@ const Home = () => {
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
+                      <h3 class="mb-4">Insurance</h3>
                       <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
+                        if you are looking for a Insurance field job. First
+                        Solution Recruitment Consultancy provides for best
+                        Insurance jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Secured Loans
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Credit Facilities
                       </p>
                       <p className="d-flex gap-2 align-items-center">
-                        <FaRegCheckCircle />
+                        <FaRegCheckCircle style={{ color: "green" }} />
                         Cash Advanced
                       </p>
                     </div>

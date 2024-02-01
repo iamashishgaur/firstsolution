@@ -175,6 +175,16 @@ export const HeaderTitle = styled.div`
     font-size: 1.3rem;
     margin-top: 1rem;
   }
+  @media screen and (max-width: 425px) {
+    span {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    span {
+      font-size: 1.7rem;
+    }
+  }
 `;
 
 export const Projectcontainer = styled.div`
@@ -211,7 +221,6 @@ export const HeroBannermain = styled.div`
 `;
 export const BannerLeft = styled.div`
   width: 100%;
-  margin-top: 2rem;
 `;
 
 export const BannerRight = styled.div`
@@ -231,7 +240,7 @@ export const ImageContainer = styled.div`
 
 export const AboutusContainer = styled.div`
   .main-banner img {
-    height: auto;
+    max-height: 600px;
     width: 100%;
   }
 `;

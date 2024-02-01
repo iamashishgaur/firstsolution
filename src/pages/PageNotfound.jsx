@@ -18,7 +18,7 @@ const ImageContainer = styled.div`
     width: 100%;
   }
 `;
-// const Button = styled.button`
+
 //   color: #fff;
 //   border: none;
 //   outline: none;

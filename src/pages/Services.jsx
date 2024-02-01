@@ -1,9 +1,10 @@
 import React from "react";
 import { ServicesContainer } from "../style/Commenstyle";
-import { FiMenu } from "react-icons/fi";
 import { FaRegCheckCircle } from "react-icons/fa";
 import Meta from "../component/Meta";
 import GoToTop from "../component/Gototop";
+import { ServicesName } from "../data/ServicesName";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Services = () => {
   return (
@@ -11,7 +12,7 @@ const Services = () => {
       <Meta title={"Services"} />
       <ServicesContainer className="py-3 mt-5">
         <div
-          class="text-center mx-auto wow fadeInUp"
+          class="text-center mx-auto wow fadeInUp "
           data-wow-delay="0.1s"
           style={{
             maxWidth: "600px",
@@ -23,7 +24,7 @@ const Services = () => {
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             Our Services
           </p>
-          <h1 class="display-5 mb-5">Awesome Services For First Solution</h1>
+          <h1 class=" mb-5">Awesome Services For First Solution</h1>
         </div>
         <div className="container-xxl wrapper mb-5">
           <div
@@ -56,116 +57,22 @@ const Services = () => {
             </div>
             <div class="col-lg-4">
               <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-1"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Banking
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-2"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Finance
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-3"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Securities
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-4"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Insurance
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-5"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Telecom
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-6"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Retail
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-7"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Pharma
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-8"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    Automobiles
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-9"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    IT Sector
-                  </h5>
-                </button>
-                <button
-                  class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0 "
-                  data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-10"
-                  type="button"
-                >
-                  <h5 class="servicesname m-0 d-flex gap-3">
-                    <FiMenu size={25} />
-                    BPO
-                  </h5>
-                </button>
+                {ServicesName.map((item, index) => {
+                  return (
+                    <button
+                      id={index}
+                      class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 "
+                      data-bs-toggle="pill"
+                      data-bs-target={item.serviceslink}
+                      type="button"
+                    >
+                      <h5 class="servicesname m-0 d-flex gap-2">
+                        {item.servicestitle}
+                        <MdKeyboardDoubleArrowRight size={25} />
+                      </h5>
+                    </button>
+                  );
+                })}
               </div>
             </div>
             <div class="col-lg-8">
@@ -183,15 +90,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Banking</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -220,15 +125,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Finance</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -260,15 +163,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Securities</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -300,15 +201,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Insurance</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -340,15 +239,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Telecom</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -380,15 +277,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Retail</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -420,15 +315,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Pharma</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -460,15 +353,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">Automobiles</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -500,15 +391,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">IT Sector</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -540,15 +429,13 @@ const Services = () => {
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <h3 class="mb-4">
-                        25 Years Of Experience In Financial Support
-                      </h3>
-                      <p class="mb-4">
+                      <h3 class="mb-4">BPO</h3>
+                      {/* <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum
                         sit. Aliqu diam amet diam et eos. Clita erat ipsum et
                         lorem et sit, sed stet lorem sit clita duo justo erat
                         amet.
-                      </p>
+                      </p> */}
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans

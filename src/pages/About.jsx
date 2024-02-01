@@ -2,9 +2,11 @@ import React from "react";
 import { AboutusContainer } from "../style/Commenstyle";
 import { Link } from "react-router-dom";
 import { FaRegCheckCircle } from "react-icons/fa";
-import { BsGithub, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 import Meta from "../component/Meta";
 import GoToTop from "../component/Gototop";
+import MarqueeLogo from "../component/MarqueeLogo";
+import { FaFacebook } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -24,14 +26,14 @@ const About = () => {
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             About Us
           </p>
-          <h1 class="display-5 mb-5">About For First Solution</h1>
+          <h1 class=" mb-5">About For First Solution</h1>
         </div>
         <div className="container-xxl wrapper">
           <div className="row ">
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="main-banner position-relative ">
                 <img
-                  src="Images/avatar-3.jpg"
+                  src="Images/about.webp"
                   className="img-fluid rounded"
                   alt="main-banner"
                 />
@@ -77,13 +79,19 @@ const About = () => {
                   </h2>
                   <div>
                     <span>
-                      <Link to="">
+                      <Link
+                        target="_new"
+                        to="https://www.linkedin.com/in/firstsolution-consultancy-a0923011a/"
+                      >
                         <BsLinkedin />
                       </Link>
                     </span>
                     <span>
-                      <Link to="">
-                        <BsGithub />
+                      <Link
+                        target="_new"
+                        to="https://www.facebook.com/people/First-Solution/100039596475714/"
+                      >
+                        <FaFacebook />
                       </Link>
                     </span>
                     <span>
@@ -105,11 +113,6 @@ const About = () => {
         <div className="container-xxl wrapper ">
           <div className="row ">
             <div className="writepen col-lg-12 col-md-12 col-sm-12">
-              {/* <img
-              src="Images/pen.jpg"
-              className="img-fluid rounded"
-              alt="main-banner"
-            /> */}
               <p className="abouttext" style={{ marginTop: "20px" }}>
                 Given the mix of collective skills & experience, commitment to
                 deadlines and a strong culture of ethics. In keeping with the
@@ -118,6 +121,7 @@ const About = () => {
                 act as a like-minded sounding board to the customer - who could
                 be an organization or a candidate.
               </p>
+
               <div className="mt-2">
                 <h2 style={{ fontWeight: "bold" }}>
                   What Business are we into ?
@@ -217,18 +221,10 @@ const About = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="col-lg-6 col-md-12 col-sm-12">
-            <div className="main-banner position-relative ">
-              <img
-                src="Images/avatar-3.jpg"
-                className="img-fluid rounded"
-                alt="main-banner"
-              />
-            </div>
-          </div> */}
           </div>
         </div>
       </AboutusContainer>
+      <MarqueeLogo />
       <GoToTop />
     </>
   );
