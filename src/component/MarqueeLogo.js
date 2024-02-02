@@ -11,9 +11,7 @@ const MarqueeLogo = () => {
             <div className="marq-box">
               <img src="Images/logo/SBI.jpg" alt="logo" />
             </div>
-            <div className="marq-box">
-              <img src="Images/logo/ABG_Birla.png" alt="logo" />
-            </div>
+
             <div className="marq-box">
               <img src="Images/logo/hdfc-sales.svg" alt="logo" />
             </div>
@@ -39,7 +37,7 @@ const MarqueeLogo = () => {
               <img src="Images/logo/TATA_AIG.png" alt="logo" />
             </div>
             <div className="marq-box">
-              <img src="Images/logo/manipal-cigna.webp" alt="logo" />
+              <img src="Images/logo/ManipalCigna.png" alt="logo" />
             </div>
             <div className="marq-box">
               <img src="Images/logo/ICICI_Lombard.png" alt="logo" />
@@ -48,10 +46,10 @@ const MarqueeLogo = () => {
               <img src="Images/logo/future-generali.png" alt="logo" />
             </div>
             <div className="marq-box">
-              <img src="Images/logo/ABG_Birla.png" alt="logo" />
+              <img src="Images/logo/adityab.webp" alt="logo" />
             </div>
             <div className="marq-box">
-              <img src="Images/logo/star-helth.png" alt="logo" />
+              <img src="Images/logo/edelwise.png" alt="logo" />
             </div>
             <div className="marq-box" style={{ marginRight: "50px" }}>
               <img src="Images/logo/max.png" alt="logo" />

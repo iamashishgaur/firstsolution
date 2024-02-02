@@ -51,7 +51,13 @@ const Home = () => {
                 </HeaderTitle>
               </BannerLeft>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 herobanner">
+            <motion.div
+              variants={fadeIn("left", 1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="col-lg-6 col-md-12 col-sm-12 herobanner"
+            >
               <div className="main-banner position-relative ">
                 <img
                   src="Images/first-solution-banner.webp"
@@ -59,7 +65,7 @@ const Home = () => {
                   alt="main-banner"
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </HeroBanner>
@@ -93,7 +99,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="main-banner position-relative ">
                 <img
-                  src="Images/about.jpg"
+                  src="Images/first-about.jpeg"
                   className="img-fluid rounded"
                   alt="main-banner"
                 />

@@ -239,9 +239,13 @@ export const ImageContainer = styled.div`
 `;
 
 export const AboutusContainer = styled.div`
-  .main-banner img {
-    max-height: 600px;
-    width: 100%;
+  .main-banner {
+    display: flex;
+    justify-content: center;
+    img {
+      max-height: 600px;
+      width: 80%;
+    }
   }
 `;
 export const ServicesContainer = styled.div``;

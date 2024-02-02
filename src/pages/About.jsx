@@ -33,7 +33,7 @@ const About = () => {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="main-banner position-relative ">
                 <img
-                  src="Images/about.webp"
+                  src="Images/first-about.jpeg"
                   className="img-fluid rounded"
                   alt="main-banner"
                 />
