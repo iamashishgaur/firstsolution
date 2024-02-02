@@ -7,17 +7,17 @@ const AboutFounder = () => {
   return (
     <>
       <Meta title={"About Founder"} />
-      <h3 class="mb-3 text-center aboutheading">About Us Founder</h3>
+      <h3 class="mb-3 text-center aboutheading">About Founder</h3>
       <section class="py-3 py-md-5">
         <div class="container-xxl wrapper">
           <div class="row gy-3 gy-md-4 gy-lg-0 mt-5 about-founder">
             <div class="col-lg-7 col-md-6 col-sm-6 ">
               <h2 class="mb-3">Mr. Gayatriprasad Dubey</h2>
               <p class=" mb-3">
-                Mr. Gayatriprasad Dubey is a founder of the company First
-                Solution. He is an Graduation. am working more than 10 year of
-                sales and management. He has more than 10 years of experience in
-                the field of Recruitment Consultancy.
+                Gayatriprasad Dubey is a founder of First Solution. He is an
+                Graduated and worked more than 10 year's in sales and management
+                also he has more than 10 years of experience in the field of
+                Recruitment Consultancy.
               </p>
               <p class="mb-5">
                 We are a fast-growing company, but we have never lost sight of
@@ -36,7 +36,7 @@ const AboutFounder = () => {
             </div>
           </div>
           <div class="row gy-3 gy-md-4 gy-lg-0 mt-5 mb-5 ">
-            <h2 class="mb-3">Our Achievement</h2>
+            <h2 class="mb-3">Our Achievement's</h2>
             {Certificates.map((item, index) => {
               return (
                 <div class="col-lg-4 col-md-6 col-sm-6 mt-5" id={index}>
