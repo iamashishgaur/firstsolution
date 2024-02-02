@@ -113,7 +113,7 @@ const Home = () => {
                 />
                 <span>
                   <p className="mb-1">Founder</p>
-                  <h4>Gayatri Dubey</h4>
+                  <h4>Gayatriprasad Dubey</h4>
                   <Link className="btn btn-primary" to="/about-founder">
                     About Founder
                   </Link>
