@@ -34,7 +34,8 @@ const Home = () => {
               <BannerLeft>
                 <HeaderTitle>
                   <span>
-                    Build a Career By First Solution Recruitment Consultancy
+                    Build Your Career With First Solution Recruitment
+                    Consultancy
                   </span>
                   <p>
                     Never Ending Solution Make Your Career Easy with our First
