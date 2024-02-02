@@ -147,7 +147,7 @@ const Footer = () => {
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 footer">
                 <div class="widget courses-link-list">
-                  <h5 class="widget-title">Quick Link</h5>
+                  <h5 class="widget-title">Quick Links</h5>
                   <ul class="courses-link-list">
                     <li>
                       <Link to="/">
@@ -158,7 +158,7 @@ const Footer = () => {
                     <li>
                       <Link to="/">
                         <MdKeyboardDoubleArrowRight size={25} />
-                        Term's & Condition
+                        Terms & Conditions
                       </Link>
                     </li>
                   </ul>
