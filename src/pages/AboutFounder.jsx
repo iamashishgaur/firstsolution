@@ -15,7 +15,7 @@ const AboutFounder = () => {
               <h2 class="mb-3">Mr. Gayatriprasad Dubey</h2>
               <p class=" mb-3">
                 Gayatriprasad Dubey is a founder of First Solution. He is an
-                Graduated and worked more than 10 year's in sales and management
+                Graduated and worked more than 10 year in sales and management
                 also he has more than 10 years of experience in the field of
                 Recruitment Consultancy.
               </p>
