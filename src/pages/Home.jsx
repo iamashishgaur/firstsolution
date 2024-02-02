@@ -37,24 +37,18 @@ const Home = () => {
                     Build Your Career With First Solution Recruitment
                     Consultancy
                   </span>
+                  <br />
+                  <p
+                    class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+                    style={{ fontSize: "1.5rem", fontWeight: "bold" }}
+                  >
+                    Never Ending Solution
+                  </p>
                   <p>
-                    Never Ending Solution Make Your Career Easy with our First
-                    Solution Recruitment Consultancy.
+                    Make Your Career Easy with our First Solution Recruitment
+                    Consultancy.
                   </p>
                 </HeaderTitle>
-                <button
-                  class="btn btn-primary"
-                  style={{
-                    marginTop: "1.5rem",
-                    padding: "15px 30px",
-                    fontWeight: "500",
-                  }}
-                  onClick={() => {
-                    nav("/");
-                  }}
-                >
-                  Explore More <MdKeyboardDoubleArrowRight size={25} />
-                </button>
               </BannerLeft>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 herobanner">

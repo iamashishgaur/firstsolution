@@ -167,7 +167,7 @@ export const ProjectField = styled(SummaryFiels)`
 
 export const HeaderTitle = styled.div`
   span {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bold;
     /* color: #5b04f1; */
   }
