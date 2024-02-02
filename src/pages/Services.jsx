@@ -24,7 +24,7 @@ const Services = () => {
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             Our Services
           </p>
-          <h1 class=" mb-5">Awesome Services For First Solution</h1>
+          <h1 class=" mb-5">Awesome Services First Solution</h1>
         </div>
         <div className="container-xxl wrapper mb-5">
           <div
@@ -45,7 +45,7 @@ const Services = () => {
               <p className="abouttext">
                 First Solution most important strength is its domain knowledge
                 of the various industry sectors it operates in. First Solution
-                aims at providing practical and cost effective end-to-end
+                aim is providing practical and cost effective end-to-end
                 manpower recruitment solutions to Insurance, Non Insurance and
                 Finance enabled services organizations. We offer customized
                 solutions in line with organizations business needs as we
@@ -126,12 +126,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">Finance</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                      
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -144,9 +139,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                      
                     </div>
                   </div>
                 </div>
@@ -164,12 +157,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">Securities</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                      
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -182,9 +170,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                      
                     </div>
                   </div>
                 </div>
@@ -202,12 +188,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">Insurance</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                     
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -220,9 +201,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                      
                     </div>
                   </div>
                 </div>
@@ -240,12 +219,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">Telecom</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                      
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -258,9 +232,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                     
                     </div>
                   </div>
                 </div>
@@ -278,12 +250,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">Retail</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                      
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -296,9 +263,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                      
                     </div>
                   </div>
                 </div>
@@ -316,12 +281,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">Pharma</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                     
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -334,9 +294,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                     
                     </div>
                   </div>
                 </div>
@@ -354,12 +312,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">Automobiles</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                      
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -372,9 +325,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                      
                     </div>
                   </div>
                 </div>
@@ -392,12 +343,7 @@ const Services = () => {
                     </div>
                     <div class="col-md-12">
                       <h3 class="mb-4">IT Sector</h3>
-                      {/* <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum
-                        sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-                        lorem et sit, sed stet lorem sit clita duo justo erat
-                        amet.
-                      </p> */}
+                      
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle />
                         Secured Loans
@@ -410,9 +356,7 @@ const Services = () => {
                         <FaRegCheckCircle />
                         Cash Advanced
                       </p>
-                      {/* <Link href="" class="btn btn-primary py-3 px-5 mt-3">
-                        Read More
-                      </Link> */}
+                      
                     </div>
                   </div>
                 </div>

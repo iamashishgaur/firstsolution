@@ -26,7 +26,7 @@ const About = () => {
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             About Us
           </p>
-          <h1 class=" mb-5">About For First Solution</h1>
+          <h1 class=" mb-5">About First Solution</h1>
         </div>
         <div className="container-xxl wrapper">
           <div className="row ">
@@ -48,7 +48,7 @@ const About = () => {
                 />
                 <span>
                   <p className="mb-1">Founder</p>
-                  <h4>Gayatri Prasad</h4>
+                  <h4>Gayatriprasad Dubey</h4>
                   <Link className="btn btn-primary" to="/about-founder">
                     About Founder
                   </Link>
@@ -57,17 +57,17 @@ const About = () => {
               <div className="mt-2">
                 <p className="abouttext">
                   A team of first generation entrepreneurs promotes First
-                  Solution global organizations in recruitment & resourcing,
-                  solution development, people management, administration and
-                  marketing. First Solution understand what it takes a company
-                  to hire the right professional for the right position.
+                  Solution globally in recruitment & resourcing, solution
+                  development, people management, administration and marketing
+                  organizations's. First Solution understand what it takes a
+                  company to hire the right professional for the right position.
                 </p>
                 <p className="abouttext">
                   Given the mix of collective skills & experience, commitment to
                   deadlines and a strong culture of ethics. In keeping with the
                   current industry requirements, First Solution has developed a
                   mix of professionals with domain and functional experience,
-                  who act as a like-minded sounding board to the customer - who
+                  who act a like-minded sounding board to the customer. who
                   could be an organization or a candidate.
                 </p>
                 <div className="social-icons-2" style={{ marginTop: "20px" }}>
@@ -114,12 +114,10 @@ const About = () => {
           <div className="row ">
             <div className="writepen col-lg-12 col-md-12 col-sm-12">
               <p className="abouttext" style={{ marginTop: "20px" }}>
-                Given the mix of collective skills & experience, commitment to
-                deadlines and a strong culture of ethics. In keeping with the
-                current industry requirements, First Solution has developed a
-                mix of professionals with domain and functional experience, who
-                act as a like-minded sounding board to the customer - who could
-                be an organization or a candidate.
+                In keeping with the current industry requirements, First
+                Solution has developed a mix of professionals with domain and
+                functional experience, who act as a like-minded sounding board
+                to the customer - who could be an organization or a candidate.
               </p>
 
               <div className="mt-2">
@@ -128,11 +126,11 @@ const About = () => {
                 </h2>
                 <p className="abouttext">
                   First Solution is an eminent placement firm that is committed
-                  to providing superior value-added service to our clients and
-                  candidates alike, thereby becoming the most respected and
-                  effective recruitment / search firm for permanent placements
-                  in the Insurance, Non-insurance, Retail, IT, BPO, Telecom,
-                  Pharma and Finance industry.
+                  to provide superior value-added service to our clients and
+                  candidates like thereby becoming the most respected and
+                  effective recruitment/search firm for permanent placements in
+                  the Insurance, Non-insurance, Retail, IT, BPO, Telecom, Pharma
+                  and Finance industries.
                 </p>
                 <p className="abouttext">
                   We are focused on delivering complete quality solutions for
@@ -144,13 +142,13 @@ const About = () => {
                   Resources how do we search ?
                 </h2>
                 <p className="abouttext">
-                  Our search for talent is simply an other methodology that
+                  Our talent search is simply another methodology that
                   identifies First Solution consultants from others. Our
                   consultants undertake a preliminary market study to determine
                   the specific search universe from which suitable candidates
                   can be sourced. We then decide which one or more methods to
                   use for sourcing the candidates - through advertisements,
-                  referrals, headhunting and referring to our extensive
+                  referrals, headhunting, and referring to our extensive
                   database.
                 </p>
                 <p className="abouttext">
@@ -163,16 +161,17 @@ const About = () => {
                   their competitive edge.
                 </p>
                 <p className="abouttext">
-                  First Solution is a team-based work culture ensures that
-                  employees have the opportunity to learn, develop new skills or
-                  pick up new competencies relevant for the company's growth.
+                  The first Solution is a team-based work culture that ensures
+                  that employees have the opportunity to learn, develop new
+                  skills, or pick up new competencies relevant to the company's
+                  growth.
                 </p>
                 <p className="abouttext">
                   First Solution respects the stringent expectations of highly
-                  competitive, new economy firms who value commitment and
-                  quality from their business partners. First Solution strive to
-                  meet their expectations and are proud to be associated with
-                  such clients.
+                  competitive, new economy firms that value commitment and
+                  quality from their business partners. The first Solution
+                  strives to meet their expectations and are proud to be
+                  associated with such clients.
                 </p>
                 <h2 style={{ fontWeight: "bold", marginTop: "20px" }}>
                   Recruitment :)
@@ -194,7 +193,8 @@ const About = () => {
                   </p>
                   <p className="abouttext d-flex gap-3 align-items-center">
                     <FaRegCheckCircle size={30} style={{ color: "green" }} />
-                    Do not waste your time meeting unsuitable candidates.
+                    We Do not waste our and your time meeting unsuitable
+                    candidates.
                   </p>
                   <p className="abouttext d-flex gap-3 align-items-center">
                     <FaRegCheckCircle size={30} style={{ color: "green" }} />
@@ -203,7 +203,7 @@ const About = () => {
                   </p>
                   <p className="abouttext d-flex gap-3 align-items-center">
                     <FaRegCheckCircle size={30} style={{ color: "green" }} />
-                    Understand the organizational needs and derive specific
+                    Understand the organizational needs and drive specific
                     models for fulfilling them.
                   </p>
 
@@ -216,7 +216,7 @@ const About = () => {
                     <FaRegCheckCircle size={30} style={{ color: "green" }} />
                     Based on the requirements provided to us, we will screen
                     potential candidates and select only the most qualified
-                    personnel for your organization.
+                    personnel for the organizations.
                   </p>
                 </div>
               </div>

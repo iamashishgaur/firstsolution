@@ -150,33 +150,15 @@ const Footer = () => {
                   <h5 class="widget-title">Quick Link</h5>
                   <ul class="courses-link-list">
                     <li>
-                      <Link to="/about">
+                      <Link to="/">
                         <MdKeyboardDoubleArrowRight size={25} />
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/about-founder">
-                        <MdKeyboardDoubleArrowRight size={25} />
-                        About Founder
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/contact">
-                        <MdKeyboardDoubleArrowRight size={25} />
-                        Contact
+                        Privacy & Policy
                       </Link>
                     </li>
                     <li>
                       <Link to="/">
                         <MdKeyboardDoubleArrowRight size={25} />
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/">
-                        <MdKeyboardDoubleArrowRight size={25} />
-                        Term & Condition
+                        Term's & Condition
                       </Link>
                     </li>
                   </ul>

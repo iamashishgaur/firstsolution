@@ -37,7 +37,7 @@ const Home = () => {
                     Build a Career By First Solution Recruitment Consultancy
                   </span>
                   <p>
-                    Never Ending Solution Make Our Career Easily with our First
+                    Never Ending Solution Make Your Career Easy with our First
                     Solution Recruitment Consultancy.
                   </p>
                 </HeaderTitle>
@@ -90,7 +90,7 @@ const Home = () => {
             About Us
           </p>
           <h1 class=" mb-5" style={{ fontSize: "2rem", fontWeight: "bold" }}>
-            About For First Solution
+            About First Solution
           </h1>
         </motion.div>
         <div className="container-xxl wrapper mt-5">
@@ -123,23 +123,20 @@ const Home = () => {
               <div className="mt-2 ">
                 <p className="abouttext">
                   A team of first generation entrepreneurs promotes First
-                  Solution global organizations in recruitment & resourcing,
-                  solution development, people management, administration and
-                  marketing. First Solution understand what it takes a company
-                  to hire the right professional for the right position.
+                  Solution globally in recruitment & resourcing, solution
+                  development, people management, administration and marketing
+                  organizations's. First Solution understand what it takes a
+                  company to hire the right professional for the right position.
                 </p>
                 <p className="abouttext">
                   Given the mix of collective skills & experience, commitment to
                   deadlines and a strong culture of ethics. In keeping with the
                   current industry requirements, First Solution has developed a
                   mix of professionals with domain and functional experience,
-                  who act as a like-minded sounding board to the customer - who
+                  who act a like-minded sounding board to the customer. who
                   could be an organization or a candidate.
                 </p>
-                <p className="abouttext">
-                  Given the mix of collective skills & experience, commitment to
-                  deadlines and a strong culture of ethics.
-                </p>
+
                 <button
                   className="btn btn-primary text-center py-3 px-5 ml-5"
                   style={{ fontWeight: "500" }}
@@ -204,8 +201,8 @@ const Home = () => {
                       <i class="fa fa-check fa-3x text-primary mb-3"></i>
                       <h4 class="mb-3">Best Place</h4>
                       <p class="mb-3">
-                        First solution recruitment consultancy is Provid a jobs
-                        for best place.
+                        First solution recruitment consultancy Provides jobs at
+                        best places.
                       </p>
                     </div>
                   </div>
@@ -220,10 +217,10 @@ const Home = () => {
                   >
                     <div class="feature-box border rounded p-4">
                       <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                      <h4 class="mb-3">Job &amp; Garanity</h4>
+                      <h4 class="mb-3">Job &amp; Guarantee</h4>
                       <p class="mb-3">
-                        First solution recruitment consultancy is provid a jobs
-                        for Job Guarantee.
+                        First solution recruitment consultancy provides jobs
+                        With Job Guarantee.
                       </p>
                     </div>
                   </div>
@@ -242,7 +239,7 @@ const Home = () => {
                   <i class="fa fa-check fa-3x text-primary mb-3"></i>
                   <h4 class="mb-3">Fast Service</h4>
                   <p class="mb-3">
-                    First solution recruitment consultancy is provid a jobs for
+                    First solution recruitment consultancy provides jobs With
                     Fast Services.
                   </p>
                 </div>
@@ -268,7 +265,7 @@ const Home = () => {
           <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
             Our Services
           </p>
-          <h1 class=" mb-5">Awesome Services For First Solution</h1>
+          <h1 class=" mb-5">Awesome Services From First Solution</h1>
         </div>
         <div className="container-xxl wrapper">
           <div
@@ -344,13 +341,13 @@ const Home = () => {
                     <div class="col-md-6">
                       <h3 class="mb-4">Banking</h3>
                       <p class="mb-4">
-                        if you are looking for a banking field job. First
-                        Solution Recruitment Consultancy provides for best
-                        banking jobs.
+                        If you are looking for a banking field job. First
+                        Solution Recruitment Consultancy provides best banking
+                        jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle style={{ color: "green" }} />
-                        Best Place
+                        Best Places
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle style={{ color: "green" }} />
@@ -358,7 +355,7 @@ const Home = () => {
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle style={{ color: "green" }} />
-                        Fast Service
+                        Fast Services
                       </p>
                     </div>
                   </div>
@@ -378,9 +375,9 @@ const Home = () => {
                     <div class="col-md-6">
                       <h3 class="mb-4">Finance</h3>
                       <p class="mb-4">
-                        if you are looking for a Finace field job. First
-                        Solution Recruitment Consultancy provides for best
-                        Finance jobs.
+                        If you are looking for a Finace field job. First
+                        Solution Recruitment Consultancy provides best Finance
+                        jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle style={{ color: "green" }} />
@@ -412,9 +409,9 @@ const Home = () => {
                     <div class="col-md-6">
                       <h3 class="mb-4">Securities</h3>
                       <p class="mb-4">
-                        if you are looking for a Securities field job. First
-                        Solution Recruitment Consultancy provides for best
-                        Securities Gaurd jobs.
+                        If you are looking for a Securities field job. First
+                        Solution Recruitment Consultancy provides best Security
+                        Gaurds jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle style={{ color: "green" }} />
@@ -446,9 +443,9 @@ const Home = () => {
                     <div class="col-md-6">
                       <h3 class="mb-4">Insurance</h3>
                       <p class="mb-4">
-                        if you are looking for a Insurance field job. First
-                        Solution Recruitment Consultancy provides for best
-                        Insurance jobs.
+                        If you are looking for a Insurance field job. First
+                        Solution Recruitment Consultancy provides best Insurance
+                        jobs.
                       </p>
                       <p className="d-flex gap-2 align-items-center">
                         <FaRegCheckCircle style={{ color: "green" }} />

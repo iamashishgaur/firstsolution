@@ -1,6 +1,6 @@
 import React from "react";
 import { data } from "../data/TestimonialData";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const Testimonials = () => {
@@ -21,8 +21,8 @@ const Testimonials = () => {
           Testimonials
         </p>
         <h1 class=" mb-3" style={{ fontSize: "2rem", fontWeight: "bold" }}>
-          Review For Some Student who get a Job by First Solution Recruitment
-          Consultancy
+          Review's Form Some's Student's who Securied a Job by First Solution
+          Recruitment Consultancy.
         </h1>
       </div>
       <div
@@ -52,9 +52,7 @@ const Testimonials = () => {
                     <p>{item.designation}</p>
                     <p>
                       <i class="fas fa-quote-left pe-2"></i>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quod eos id officiis hic tenetur quae quaerat ad velit ab
-                      hic tenetur.
+                      {item.review}
                     </p>
                   </div>
                 );

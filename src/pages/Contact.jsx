@@ -23,13 +23,15 @@ const Contact = () => {
         <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
           Contact Us
         </p>
-        <h1 class=" mb-5">Contact Us For First Solution</h1>
+        <h1 class=" mb-5">Contact Us For Never Ending Solutions</h1>
       </div>
 
       <div className="container-xxl wrapper py-5 mb-5">
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12">
-            <h1 class=" mb-4">If You Have Any Query, Please Contact Us</h1>
+            <h1 class=" mb-4">
+              If You Have Any Query, fell free do contact Us
+            </h1>
             <div className="addressbox">
               <span>
                 <FaLocationDot />
