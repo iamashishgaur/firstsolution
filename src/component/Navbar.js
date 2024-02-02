@@ -4,9 +4,6 @@ import styled from "styled-components";
 import { MenuData } from "../data/MenuData";
 import { AiOutlineClose } from "react-icons/ai";
 import { RiMenu3Fill } from "react-icons/ri";
-import { FaFacebook } from "react-icons/fa";
-import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
-import { Link } from "react-router-dom";
 
 const NavbarContainer = styled.div`
   background-color: white;
@@ -58,34 +55,6 @@ const Navbar = () => {
                 </li>
               );
             })}
-            <div className="nav-social">
-              <span>
-                <Link
-                  target="_new"
-                  to="https://www.linkedin.com/in/firstsolution-consultancy-a0923011a/"
-                >
-                  <BsLinkedin />
-                </Link>
-              </span>
-              <span>
-                <Link
-                  target="_new"
-                  to="https://www.facebook.com/people/First-Solution/100039596475714/"
-                >
-                  <FaFacebook />
-                </Link>
-              </span>
-              <span>
-                <Link to="">
-                  <BsInstagram />
-                </Link>
-              </span>
-              <span>
-                <Link to="">
-                  <BsYoutube className="fs-4" />
-                </Link>
-              </span>
-            </div>
           </NavMenu>
         </div>
       </NavbarContainer>

@@ -166,7 +166,7 @@ const Footer = () => {
               </div>
               <div class="col-lg-3 col-md-6 col-sm-6 footer">
                 <div class="widget newsletter-widget">
-                  <h5 class="widget-title">Get In Touch</h5>
+                  <h5 class="widget-title">Connect With Us On</h5>
                   <div className="social-icons">
                     <span>
                       <Link className="text-white" to="">
@@ -190,6 +190,7 @@ const Footer = () => {
                     </span>
                   </div>
                   <div class="footer-newsletter mt-3">
+                    <h3 class="widget-title">Get In Touch</h3>
                     <p>
                       Sign Up to Our Newsletter to Get Latest Updates & Services
                     </p>
