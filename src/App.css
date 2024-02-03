@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+p {
+  font-weight: 400;
+  font-size: 17px;
+}
 
 .poppins-regular {
   font-family: "Poppins", sans-serif;
@@ -385,6 +389,7 @@
     margin: 0 50px;
   }
 }
+
 @media screen and (max-width: 425px) {
   .founder {
     display: flex;
@@ -404,6 +409,16 @@
         font-size: 0.8rem;
       }
     }
+  }
+}
+@media screen and (max-width: 320px) {
+  .founder {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .testimonials {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 375px) {

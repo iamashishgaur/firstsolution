@@ -20,7 +20,10 @@ const Testimonials = () => {
         <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
           Testimonials
         </p>
-        <h1 class=" mb-3" style={{ fontSize: "2rem", fontWeight: "bold" }}>
+        <h1
+          class="testimonials mb-3"
+          style={{ fontSize: "2rem", fontWeight: "bold" }}
+        >
           Reviews From Some Students who Secured Jobs by First Solution
           Recruitment Consultancy.
         </h1>

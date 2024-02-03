@@ -189,21 +189,6 @@ const Footer = () => {
                       </Link>
                     </span>
                   </div>
-                  <div class="footer-newsletter mt-3">
-                    <h3 class="widget-title">Get In Touch</h3>
-                    <p>
-                      Sign Up to Our Newsletter to Get Latest Updates & Services
-                    </p>
-                    <form class="news-letter-form">
-                      <input
-                        type="email"
-                        name="news-email"
-                        id="news-email"
-                        placeholder="Your email address"
-                      />
-                      <input type="submit" value="Send" />
-                    </form>
-                  </div>
                 </div>
               </div>
             </div>
