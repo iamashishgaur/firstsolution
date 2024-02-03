@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12">
             <h1 class=" mb-4">
-              If You Have Any Query, fell free do contact Us
+              If You Have Any Query, feel free to contact Us
             </h1>
             <div className="addressbox">
               <span>

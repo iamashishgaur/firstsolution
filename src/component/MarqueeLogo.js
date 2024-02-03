@@ -11,12 +11,11 @@ const MarqueeLogo = () => {
             <div className="marq-box">
               <img src="Images/logo/SBI.jpg" alt="logo" />
             </div>
-
             <div className="marq-box">
               <img src="Images/logo/hdfc-sales.svg" alt="logo" />
             </div>
             <div className="marq-box">
-              <img src="Images/logo/indiaFirst.png" alt="logo" />
+              <img src="Images/logo/IndiaFirst.png" alt="logo" />
             </div>
             <div className="marq-box">
               <img src="Images/logo/kotak.png" alt="logo" />

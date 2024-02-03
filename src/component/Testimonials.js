@@ -21,7 +21,7 @@ const Testimonials = () => {
           Testimonials
         </p>
         <h1 class=" mb-3" style={{ fontSize: "2rem", fontWeight: "bold" }}>
-          Review's Form Some's Student's who Securied a Job by First Solution
+          Reviews From Some Students who Secured Jobs by First Solution
           Recruitment Consultancy.
         </h1>
       </div>

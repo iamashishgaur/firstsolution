@@ -2,8 +2,6 @@ import React from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 import styled from "styled-components";
 import Testimonials from "../component/Testimonials";
 import GoToTop from "../component/Gototop";
@@ -51,13 +49,7 @@ const Home = () => {
                 </HeaderTitle>
               </BannerLeft>
             </div>
-            <motion.div
-              variants={fadeIn("left", 1)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="col-lg-6 col-md-12 col-sm-12 herobanner"
-            >
+            <div className="col-lg-6 col-md-12 col-sm-12 herobanner">
               <div className="main-banner position-relative ">
                 <img
                   src="Images/first-solution-banner.webp"
@@ -65,18 +57,14 @@ const Home = () => {
                   alt="main-banner"
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </HeroBanner>
       .{/* Home Banner End */}
       <MarqueeLogo />
       <AboutusContainer className="py-3 mt-5 mb-5">
-        <motion.div
-          variants={fadeIn("up", 0.7)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+        <div
           class="text-center mx-auto wow fadeInUp"
           data-wow-delay="0.1s"
           style={{
@@ -93,7 +81,7 @@ const Home = () => {
           <h1 class=" mb-5" style={{ fontSize: "2rem", fontWeight: "bold" }}>
             About First Solution
           </h1>
-        </motion.div>
+        </div>
         <div className="container-xxl wrapper mt-5">
           <div className="row ">
             <div className="col-lg-6 col-md-12 col-sm-12">

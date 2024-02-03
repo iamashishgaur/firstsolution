@@ -169,7 +169,6 @@ export const HeaderTitle = styled.div`
   span {
     font-size: 2.7rem;
     font-weight: bold;
-    /* color: #5b04f1; */
   }
   & > p {
     font-size: 1.3rem;
@@ -177,12 +176,17 @@ export const HeaderTitle = styled.div`
   }
   @media screen and (max-width: 425px) {
     span {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
   @media screen and (max-width: 375px) {
     span {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    span {
+      font-size: 1.2rem;
     }
   }
 `;
@@ -245,6 +249,22 @@ export const AboutusContainer = styled.div`
     img {
       max-height: 600px;
       width: 80%;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .main-banner img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .writepen {
+      margin-top: 20px;
+    }
+    .founder img {
+      width: 70px;
+      height: 70px;
+      & > span {
+      }
     }
   }
 `;
